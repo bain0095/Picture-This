@@ -29,8 +29,9 @@ h4 {
   font-weight: 300;
 }
 
-img {
+picture {
   display: block;
+  max-width: 100%;
 }
 
 @media (min-width: 960px) {
@@ -38,3 +39,6 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* picture {
+  display; b */

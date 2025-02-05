@@ -11,12 +11,53 @@
 
 <body>
   <header class="header">
+
     <div class="title">
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
 
+    <picture>
+      <!-- landscape -->
+      <source srcset="images/museum-landscape-320x.jpg,
+      images/museum-landscape-640x.jpg 2x,
+      images/museum-landscape-960x.jpg 3x" 
+      media="(max-width: 320px)">
+
+      <source srcset="images/museum-landscape-480x.jpg,
+      images/museum-landscape-960x.jpg 2x,
+      images/museum-landscape-1440x.jpg 3x" 
+      media="(max-width: 480px)">
+
+      <source srcset="images/museum-landscape-720x.jpg,
+      images/museum-landscape-1440x.jpg 2x,
+      images/museum-landscape-2160x.jpg 3x" 
+      media="(max-width: 720px)">
+ 
+      <source srcset="images/museum-landscape-960x.jpg,
+      images/museum-landscape-1920x.jpg 2x,
+      images/museum-landscape-2880x.jpg 3x" 
+      media="(max-width: 960px)">
+
+      <!-- square -->
+      <source srcset="images/museum-square-800.jpg,
+      images/museum-square-1600.jpg 2x,
+      images/museum-square-2400.jpg 3x" 
+      media="(min-width: 1600px)">
+
+      <source srcset="images/museum-square-640.jpg,
+      images/museum-square-1280.jpg 2x,
+      images/museum-square-1920.jpg 3x" 
+      media="(min-width: 1280px)">
+
+      <source srcset="images/museum-square-480.jpg,
+      images/museum-square-960.jpg 2x,
+      images/museum-square-1440.jpg 3x" 
+      media="(min-width: 960px)">
+
+      <!-- fallback -->
+      <img src="images/museum.jpg" alt="place holder" />
+    </picture>
   </header>
 </body>
 
